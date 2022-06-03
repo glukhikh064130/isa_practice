@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:13.7-alpine3.16
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
